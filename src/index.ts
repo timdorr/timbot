@@ -17,7 +17,7 @@ tt.on('newsong', () => {
   setTimeout(() => tt.voteUp(), 2000)
 })
 
-setTimeout(() => tt.voteUp(), 1000)
+setTimeout(() => tt.voteUp(), 4000)
 
 tt.on('pmmed', message => {
   tt.fan(message.senderid)
@@ -28,5 +28,9 @@ tt.on('pmmed', message => {
     tt.pm('gotcha!', message.senderid)
   }
 })
+
+// tt.on('registered', event => {
+//   setTimeout(() => tt.speak(`@${event.user[0].name}, Welcome to Chillout Music, enjoy your stay!`), 2000)
+// })
 
 console.log('go!')
